@@ -1,0 +1,25 @@
+body {
+  background-color: pink;
+}
+p {
+  color: green;
+}
+
+.blue {
+  color: blue;
+}
+
+.red {
+  color: red;
+}
+
+.yellow {
+  color: yellow;
+}
+
+#important {
+  font-size: 20px;
+  color: red;
+}
+
+/* comment */
