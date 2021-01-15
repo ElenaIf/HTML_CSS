@@ -1,3 +1,15 @@
 img {
   width: 150px;
 }
+body {
+  background-color: antiquewhite;
+}
+
+p {
+  color: brown;
+}
+
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
