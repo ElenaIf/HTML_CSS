@@ -1,12 +1,23 @@
 img {
-  width: 150px;
+  width: 200px;
 }
 body {
-  background-color: antiquewhite;
+  background-color: #f5eceb;
 }
 
-p {
-  color: brown;
+p,
+h3 {
+  color: #39638a;
+}
+
+h1,
+h2,
+a {
+  color: #878a65;
+}
+
+a:active {
+  color: #d1d692;
 }
 
 body {
