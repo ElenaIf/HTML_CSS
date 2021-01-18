@@ -1,8 +1,11 @@
 img {
   width: 200px;
-}
-body {
+  border-radius: 50%;
   background-color: #f5eceb;
+}
+
+body {
+  background-color: #a7bfd6;
 }
 
 p,
