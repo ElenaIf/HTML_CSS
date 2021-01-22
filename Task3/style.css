@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  float: left;
+}
+
+section {
+  clear: both;
+}
+
+body {
+  background: rgb(180, 172, 216) url("https://source.unsplash.com/o8SzLhKUEBU")
+    no-repeat fixed center center/cover;
+}
+
+.container {
+  max-width: 800px;
+
+  margin: 0 auto;
+}
+
+header {
+  background: cadetblue;
+}
+
+nav li {
+  display: inline;
+  list-style-type: none;
+  padding: 10px;
+}
+
+nav a {
+  color: cornsilk;
+  text-decoration: none;
+}
+
+table {
+  background-color: white;
+}
+
+table thead td {
+  background-color: darksalmon;
+}
+
+td {
+  padding: 8px;
+  background-color: lightsalmon;
+}
+
+tr:nth-child(even) {
+  background-color: white;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+  margin: 5px;
+  padding: 10px;
+  border: 12px;
+  border-radius: 15px;
+  float: left;
+}
+
+.box1 {
+  background-color: rgb(119, 56, 192);
+  border: dotted white;
+}
+
+.box2 {
+  background-color: rgb(91, 133, 211);
+  border: double white;
+}
+
+.box3 {
+  background-color: rgb(27, 63, 61);
+  border-top: solid yellow;
+  border-right: solid red;
+  border-bottom: solid blue;
+  border-left: solid blueviolet;
+}
+
+.box4 {
+  background-color: rgb(67, 185, 140);
+  border: outset yellow;
+}
+
+.circle {
+  background-color: tomato;
+  border: dotted white;
+  border-radius: 50%;
+}
