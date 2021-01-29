@@ -5,15 +5,13 @@
 }
 
 .form-heading {
-  margin: 10px;
+  margin: 10px auto;
 }
 
 .form-container {
-  max-width: 330px;
-  margin: 20px auto;
-  display: inline-block;
-  width: 100%;
-  padding: 15px;
+  margin: 50px auto;
+  width: 330px;
+  padding: 20px;
   background-color: #fff;
   box-sizing: border-box;
   border: 1px solid rgba(0, 0, 0, 0.2);
@@ -25,7 +23,6 @@
 }
 
 body {
-  text-align: center;
   background-color: rgba(34, 92, 68, 0.801);
   font-family: "Roboto", sans-serif;
 }
@@ -54,7 +51,7 @@ button {
   border-radius: 5px;
   color: #fff;
   background-color: #f8911b;
-  border-color: #f8911b;
+  border: none;
   margin: 20px auto;
   height: 35px;
 }
@@ -74,4 +71,6 @@ a {
 
 .bottom-text {
   color: #fff;
+  margin: 20px auto;
+  width: 300px;
 }
