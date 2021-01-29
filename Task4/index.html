@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Task 4</title>
+  </head>
+  <body>
+    <table>
+      <thead>
+        <tr>
+          <td>Name</td>
+          <td>Example</td>
+          <td>Notes</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>type="button"</td>
+          <td><input type="button" value="button" /></td>
+          <td>defines a button. Should add "value" for a text</td>
+        </tr>
+        <tr>
+          <td>type="checkbox"</td>
+          <td><input type="checkbox" /></td>
+          <td>defines a checkbox</td>
+        </tr>
+        <tr>
+          <td>type="color"</td>
+          <td><input type="color" /></td>
+          <td>is used for input fields that should contain a color</td>
+        </tr>
+        <tr>
+          <td>type="date"</td>
+          <td><input type="date" /></td>
+          <td>
+            is used for input fields that should contain a date. Safari has
+            problems with it
+          </td>
+        </tr>
+        <tr>
+          <td>type="email"</td>
+          <td><input type="email" /></td>
+          <td>
+            is used for input fields that should contain an e-mail address
+          </td>
+        </tr>
+        <tr>
+          <td>type="file"</td>
+          <td><input type="file" /></td>
+          <td>
+            defines a file-select field and a "Browse" button for file uploads
+          </td>
+        </tr>
+        <tr>
+          <td>type="hidden"</td>
+          <td><input type="hidden" /></td>
+          <td>
+            defines a hidden input field. A hidden field often stores what
+            database record that needs to be updated when the form is submitted.
+          </td>
+        </tr>
+        <tr>
+          <td>type="number"</td>
+          <td><input type="number" /></td>
+          <td>defines a numeric input field. Can be attribute max</td>
+        </tr>
+        <tr>
+          <td>type="password"</td>
+          <td><input type="password" /></td>
+          <td>defines a password field</td>
+        </tr>
+        <tr>
+          <td>type="radio"</td>
+          <td><input type="radio" /></td>
+          <td>defines a radio button</td>
+        </tr>
+        <tr>
+          <td>type="range"</td>
+          <td><input type="range" /></td>
+          <td>
+            defines a control for entering a number whose exact value is not
+            important (like a slider control). Default range is 0 to 100.
+            However, you can set restrictions on what numbers are accepted with
+            the min, max, and step attributes
+          </td>
+        </tr>
+        <tr>
+          <td>type="reset"</td>
+          <td><input type="reset" /></td>
+          <td>
+            defines a reset button that will reset all form values to their
+            default values
+          </td>
+        </tr>
+        <tr>
+          <td>type="search"</td>
+          <td><input type="search" /></td>
+          <td>
+            is used for search fields (a search field behaves like a regular
+            text field, but there is a cross on the right)
+          </td>
+        </tr>
+        <tr>
+          <td>type="submit"</td>
+          <td><input type="submit" /></td>
+          <td>
+            defines a button for submitting form data to a form-handler. Needs
+            some php to send data
+          </td>
+        </tr>
+        <tr>
+          <td>type="tel"</td>
+          <td><input type="tel" /></td>
+          <td>
+            is used for input fields that should contain a telephone number
+          </td>
+        </tr>
+        <tr>
+          <td>type="text"</td>
+          <td><input type="text" /></td>
+          <td>defines a single-line text input field</td>
+        </tr>
+        <tr>
+          <td>type="time"</td>
+          <td><input type="time" /></td>
+          <td>allows the user to select a time (no time zone)</td>
+        </tr>
+        <tr>
+          <td>type="url"</td>
+          <td><input type="url" /></td>
+          <td>is used for input fields that should contain a URL address</td>
+        </tr>
+        <tr>
+          <td>type="month"</td>
+          <td><input type="month" /></td>
+          <td>
+            allows the user to select a month and year. Not supported in Safari
+          </td>
+        </tr>
+        <tr>
+          <td>type="week"</td>
+          <td><input type="week" /></td>
+          <td>
+            allows the user to select a week and year. Not supported in Safari
+          </td>
+        </tr>
+        <tr>
+          <td>type="image"</td>
+          <td><input type="image" /></td>
+          <td>
+            Define an image as a submit button. The path to the image is
+            specified in the src attribute
+          </td>
+        </tr>
+        <tr>
+          <td>type="datetime-local"</td>
+          <td><input type="datetime-local" /></td>
+          <td>specifies a date and time input field, with no time zone</td>
+        </tr>
+        <tr>
+          <td>select</td>
+          <td>
+            <select name="colors" id="colors">
+              <option value="red">Red</option>
+              <option value="blue">Blue</option>
+              <option value="black">Black</option>
+            </select>
+          </td>
+          <td>
+            element is used to create a drop-down list. Also has attribute
+            Multiple if you want to choose several
+          </td>
+        </tr>
+        <tr>
+          <td>Textarea</td>
+          <td>
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+          </td>
+          <td>
+            tag defines a multi-line text input control. Better specify size in
+            css
+          </td>
+        </tr>
+        <tr>
+          <td>Datalist</td>
+          <td>
+            <input list="numbers" />
+            <datalist id="numbers">
+              <option value="one">One</option>
+              <option value="two">Two</option>
+              <option value="three">Three</option>
+            </datalist>
+          </td>
+          <td>
+            tag specifies a list of pre-defined options for an input element
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
