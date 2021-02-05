@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="style.css" />
     <title>Elena Ivankina - Web Developer</title>
   </head>
+
   <body>
     <header id="header">
       <img
@@ -38,76 +39,94 @@
         </ul>
       </nav>
     </header>
-    <section class="banner-container">
-      <h1 class="banner-text-big">Hello, I am Elena</h1>
-      <h2 class="banner-text-small">a Web Developer</h2>
-    </section>
 
     <main>
-      <div class="light-section">
-        <section id="aboutMe" class="container">
-          <h2>About me</h2>
-          <p>Hello!</p>
-          <p>
-            My name is Elena Ivankina and I am a web developer. Welcome to my
-            portfolio!
-          </p>
-          <p>
-            On this website you can find information about my skills and my
-            projects.
-          </p>
-          <p>
-            Feel free to offer me a job! :) My contacts can be found at the
-            bottom of the page.
-          </p>
-          <p>Enjoy!</p>
-        </section>
-      </div>
-      <div class="dark-section">
-        <section id="past" class="container">
-          <img class="left-pic text-picture" src="img/Solologo.png" alt="" />
-          <h2>Past</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem modi
-            ipsa repellendus fuga ipsum aliquid ex cumque temporibus assumenda,
-            dolore quibusdam quam nulla ad ea corporis quis distinctio similique
-            aliquam! Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Quidem modi ipsa repellendus fuga ipsum aliquid ex cumque temporibus
-            assumenda, dolore quibusdam quam nulla ad ea corporis quis
-            distinctio similique aliquam!
-          </p>
-        </section>
-      </div>
-      <div class="light-section">
-        <section id="present" class="container">
-          <img class="right-pic text-picture" src="img/bcLogo.jfif" alt="" />
-          <h2>Present</h2>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta
-            deserunt sapiente, officiis voluptatibus temporibus recusandae!
-            Officia possimus quae earum. Similique nulla illo ea voluptatem
-            voluptas rerum vitae culpa? Molestias, voluptates. Dicta deserunt
-            sapiente, officiis voluptatibus temporibus recusandae! Officia
-            possimus quae earum. Similique nulla illo ea voluptatem voluptas
-            rerum vitae culpa? Molestias, voluptates.
-          </p>
-        </section>
-      </div>
-      <div class="dark-section">
-        <section id="future" class="container">
-          <img class="left-pic text-picture" src="img/character.png" alt="" />
-          <h2>Future</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde quos
-            fuga provident illum dolorum neque, quas nobis, modi velit saepe
-            porro perferendis beatae minus magnam vitae qui facere ipsam labore.
-            Unde quos fuga provident illum dolorum neque, quas nobis, modi velit
-            saepe porro perferendis beatae minus magnam vitae qui facere ipsam
-            labore. Unde quos fuga provident illum dolorum neque, quas nobis,
-            modi velit saepe.
-          </p>
-        </section>
-      </div>
+      <section id="heroBanner">
+        <div>
+          <h1 id="bannerTextBig">Hello, I am Elena</h1>
+          <h2 id="bannerTextSmall">a Web Developer</h2>
+        </div>
+      </section>
+      <section class="content">
+        <div class="light-section">
+          <section id="aboutMe" class="content-container">
+            <h2>About me</h2>
+            <p>Hello!</p>
+            <p>
+              My name is Elena Ivankina and I am a web developer. Welcome to my
+              portfolio! On this website you can find information about my
+              skills and my projects. Feel free to offer me a job! :) My
+              contacts can be found at the bottom of the page.
+            </p>
+            <p>Enjoy!</p>
+          </section>
+        </div>
+        <div class="dark-section">
+          <section id="past" class="content-container">
+            <h2>Past</h2>
+
+            <div class="cards">
+              <article>
+                <img
+                  class="left-pic text-picture"
+                  src="img/Solologo.png"
+                  alt=""
+                />
+                <h3>Past 1</h3>
+                <a href="#">Read more</a>
+              </article>
+              <article>
+                <img
+                  class="left-pic text-picture"
+                  src="img/Solologo.png"
+                  alt=""
+                />
+                <h3>Past 2</h3>
+                <a href="#">Read more</a>
+              </article>
+              <article>
+                <img
+                  class="left-pic text-picture"
+                  src="img/Solologo.png"
+                  alt=""
+                />
+                <h3>Past 3</h3>
+                <a href="#">Read more</a>
+              </article>
+            </div>
+          </section>
+        </div>
+        <div class="light-section">
+          <section id="present" class="content-container">
+            <img class="right-pic text-picture" src="img/bcLogo.jfif" alt="" />
+            <h2>Present</h2>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta
+              deserunt sapiente, officiis voluptatibus temporibus recusandae!
+              Officia possimus quae earum. Similique nulla illo ea voluptatem
+              voluptas rerum vitae culpa? Molestias, voluptates. Dicta deserunt
+              sapiente, officiis voluptatibus temporibus recusandae! Officia
+              possimus quae earum. Similique nulla illo ea voluptatem voluptas
+              rerum vitae culpa? Molestias, voluptates.
+            </p>
+          </section>
+        </div>
+        <div class="dark-section">
+          <section id="future" class="content-container">
+            <img class="left-pic text-picture" src="img/character.png" alt="" />
+            <h2>Future</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde quos
+              fuga provident illum dolorum neque, quas nobis, modi velit saepe
+              porro perferendis beatae minus magnam vitae qui facere ipsam
+              labore. Unde quos fuga provident illum dolorum neque, quas nobis,
+              modi velit saepe porro perferendis beatae minus magnam vitae qui
+              facere ipsam labore. Unde quos fuga provident illum dolorum neque,
+              quas nobis, modi velit saepe.
+            </p>
+          </section>
+        </div>
+      </section>
     </main>
 
     <footer>

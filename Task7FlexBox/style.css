@@ -1,0 +1,71 @@
+body {
+  background-color: rgb(228, 238, 95);
+  color: white;
+}
+
+header {
+  background-color: coral;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between; /* puts them as far as possible from each other */
+}
+
+.logo-container {
+  background-color: rgb(106, 42, 165);
+  flex: 1;
+}
+
+nav {
+  background-color: green;
+  flex: 2;
+}
+
+li {
+  display: inline-block;
+  padding: 1rem;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+.box {
+  background-color: blue;
+
+  margin: 1rem;
+  padding: 1rem;
+  box-shadow: 0 0 5px grey;
+}
+
+section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#hero-banner {
+  /* to make it perfectly centered:  */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* ***** */
+
+  height: 75vh;
+  /* To make it 75% of the viewpoint*/
+  background-color: chocolate;
+}
+
+@media (max-width: 900px) {
+  section {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
