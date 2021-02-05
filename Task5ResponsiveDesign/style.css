@@ -1,0 +1,18 @@
+/* Size is called breakpoint  */
+@media (max-width: 992px) {
+  body {
+    background-color: cornflowerblue;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    background-color: yellow;
+  }
+}
+
+@media (max-width: 576px) {
+  body {
+    background-color: aquamarine;
+  }
+}
