@@ -17,15 +17,19 @@ textarea {
 }
 
 .logo {
-  height: 50px;
+  height: 4rem;
   margin: 0.5rem;
-  flex: 1;
+  align-self: flex-start;
+}
+
+.center {
+  text-align: center;
 }
 
 header {
   position: fixed;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   z-index: 1;
   width: 100vw;
@@ -41,20 +45,19 @@ header {
 }
 
 nav {
-  flex: 2;
 }
 
 nav li {
   display: inline;
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 nav a {
   color: #878a65;
   text-decoration: none;
   font-family: "Amatic SC";
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 
 nav a:hover {
@@ -63,6 +66,12 @@ nav a:hover {
 
 #heroBanner {
   background-image: linear-gradient(to bottom, #f5eceb, #a7bfd6);
+  background-image: url(img/11Artboard.svg);
+
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  background-repeat: no-repeat;
   height: 75vh;
   /* To make the content it centered */
   display: flex;
@@ -71,13 +80,13 @@ nav a:hover {
 }
 
 #bannerTextBig {
-  font-size: 64px;
+  font-size: 5rem;
   color: #39638a;
   font-weight: 700;
 }
 
 #bannerTextSmall {
-  font-size: 64px;
+  font-size: 4rem;
   color: #39638a;
   font-weight: 300;
 }
