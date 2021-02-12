@@ -1,0 +1,102 @@
+body {
+  color: red;
+  font-size: 1.2rem;
+}
+
+a:visited {
+  color: blue;
+  text-decoration: underline;
+}
+
+a:active {
+  color: green;
+  text-decoration: underline;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  color: orange;
+  text-decoration: underline;
+}
+
+/* this is useful for making it work without the mouse */
+a:focus {
+  color: hotpink;
+  text-decoration: underline;
+}
+
+button {
+  /* make the cursor look like a hand */
+  cursor: pointer;
+}
+
+li {
+  background-color: rosybrown;
+}
+
+li:first-child {
+  background-color: slateblue;
+}
+
+li:first-child a {
+  color: green;
+}
+
+li:last-child {
+  background-color: pink;
+}
+
+li:nth-child(2) {
+  background-color: rgb(216, 70, 216);
+}
+
+li:nth-child(even) {
+  background-color: powderblue;
+}
+
+li:nth-child(5n) {
+  background-color: red;
+}
+
+li:nth-child(3n + 4) {
+  background-color: black;
+}
+
+button::before {
+  content: "Here is invisible text";
+}
+
+.hero-banner {
+  height: 35vh;
+  background-color: blanchedalmond;
+  background: url(https://source.unsplash.com/WLUHO9A_xik/1600x900) no-repeat
+    fixed center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+/* The  only difference ::before and ::after - if you use it for text, it will be either before the text or after the text*/
+.hero-banner::after {
+  /* has to have content, otherwise it does not show */
+  content: "";
+  background-color: rgba(255, 255, 255, 0.507);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+/* Here we make the text visible on top of the other content */
+.hero-banner h1 {
+  z-index: 1;
+}
+
+.hero-banner h1::first-letter {
+  color: blue;
+  font-size: 5rem;
+}

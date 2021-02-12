@@ -23,18 +23,19 @@
   </head>
 
   <body>
-    <header id="header">
+    <header>
       <img
         class="logo"
         src="img/Logo_transparent.svg"
         alt="Logo by Elena Ivankina"
       />
+
       <nav>
         <ul>
           <li><a href="#aboutMe">ABOUT ME</a></li>
-          <li><a href="#past">PAST</a></li>
-          <li><a href="#present">PRESENT</a></li>
-          <li><a href="#future">FUTURE</a></li>
+          <li><a href="#work">WORK</a></li>
+          <li><a href="#experience">EXPERIENCE</a></li>
+          <li><a href="#skills">SKILLS</a></li>
           <li><a href="#contact">CONTACT ME</a></li>
         </ul>
       </nav>
@@ -42,13 +43,14 @@
 
     <main>
       <section id="heroBanner">
-        <div class="center">
+        <div class="banner-text">
           <h1 id="bannerTextBig">Hello, I am Elena</h1>
           <h2 id="bannerTextSmall">a Web Developer</h2>
         </div>
       </section>
+
       <section class="content">
-        <div class="light-section">
+        <div class="colored-section">
           <section id="aboutMe" class="content-container">
             <h2>About me</h2>
             <p>Hello!</p>
@@ -61,45 +63,35 @@
             <p>Enjoy!</p>
           </section>
         </div>
-        <div class="dark-section">
-          <section id="past" class="content-container">
-            <h2>Past</h2>
+        <div class="colored-section">
+          <section id="work" class="content-container">
+            <div><h2>Work</h2></div>
 
             <div class="cards">
-              <article>
-                <img
-                  class="left-pic text-picture"
-                  src="img/Solologo.png"
-                  alt=""
-                />
+              <article class="card">
+                <img class="card-picture" src="img/Solologo.png" alt="" />
                 <h3>Past 1</h3>
                 <a href="#">Read more</a>
               </article>
-              <article>
-                <img
-                  class="left-pic text-picture"
-                  src="img/Solologo.png"
-                  alt=""
-                />
+
+              <article class="card">
+                <img class="card-picture" src="img/Solologo.png" alt="" />
                 <h3>Past 2</h3>
                 <a href="#">Read more</a>
               </article>
-              <article>
-                <img
-                  class="left-pic text-picture"
-                  src="img/Solologo.png"
-                  alt=""
-                />
+
+              <article class="card">
+                <img class="card-picture" src="img/Solologo.png" alt="" />
                 <h3>Past 3</h3>
                 <a href="#">Read more</a>
               </article>
             </div>
           </section>
         </div>
-        <div class="light-section">
-          <section id="present" class="content-container">
-            <img class="right-pic text-picture" src="img/bcLogo.jfif" alt="" />
-            <h2>Present</h2>
+        <div class="colored-section">
+          <section id="experience" class="content-container">
+            <!--   <img class="text-picture" src="img/bcLogo.jfif" alt="" /> -->
+            <h2>Experience</h2>
             <p>
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta
               deserunt sapiente, officiis voluptatibus temporibus recusandae!
@@ -111,10 +103,10 @@
             </p>
           </section>
         </div>
-        <div class="dark-section">
-          <section id="future" class="content-container">
-            <img class="left-pic text-picture" src="img/character.png" alt="" />
-            <h2>Future</h2>
+        <div class="colored-section">
+          <section id="skills" class="content-container">
+            <!--  <img class="text-picture" src="img/character.png" alt="" /> -->
+            <h2>Skills</h2>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde quos
               fuga provident illum dolorum neque, quas nobis, modi velit saepe
@@ -131,62 +123,68 @@
 
     <footer>
       <div class="footer-container">
-        <div class="left-footer">
-          <form>
-            <div>
-              <h2 id="contact">Contact me</h2>
-              <h3>You can send me email by using the form below</h3>
-            </div>
-            <div>
-              <label for="senderName">Your name *</label>
-              <input type="text" id="senderName" />
-            </div>
-            <div>
-              <label for="email">Your email *</label>
-              <input type="email" id="email" />
-            </div>
-            <div>
-              <label for="phone">Your phone number</label>
-              <input type="tel" id="phone" />
-            </div>
-            <div>
-              <label for="message">Your message *</label>
-              <textarea name="" id="message" cols="30" rows="10"></textarea>
-            </div>
-            <button id="sendButton" class="send-button">Send</button>
-          </form>
-        </div>
-        <div class="right-footer">
-          <h3>Or use one of these</h3>
-          <img
-            class="footer-icon"
-            src="img/linkedin-brands.svg"
-            alt=""
-            srcset=""
-          />
-          <img
-            class="footer-icon"
-            src="img/envelope-solid.svg"
-            alt=""
-            srcset=""
-          />
-          <img
-            class="footer-icon"
-            src="img/github-square-brands.svg"
-            alt=""
-            srcset=""
-          />
-          <img
-            class="footer-icon"
-            src="img/phone-square-alt-solid.svg"
-            alt=""
-            srcset=""
-          />
-          <span class="footer-icon">0451632007</span>
-        </div>
-      </div>
+        <div class="contacts-container">
+          <div class="left-footer">
+            <h2 id="contact">Contact me</h2>
+            <h3>You can send me email by using the form below</h3>
+            <form>
+              <div>
+                <label for="senderName">Your name *</label>
+                <input type="text" id="senderName" />
+              </div>
+              <div>
+                <label for="email">Your email *</label>
+                <input type="email" id="email" />
+              </div>
+              <div>
+                <label for="phone">Your phone number</label>
+                <input type="tel" id="phone" />
+              </div>
+              <div>
+                <label for="message">Your message *</label>
+                <textarea name="" id="message" cols="30" rows="10"></textarea>
+              </div>
+              <button id="sendButton" class="send-button">Send</button>
+            </form>
+          </div>
 
-      <p class="copyright">Copyright Elena Ivankina 2021</p>
+          <div class="right-footer">
+            <div class="social-media-container">
+              <h1>Other</h1>
+              <h3>social media options</h3>
+              <div class="footer-icons-container">
+                <img
+                  class="footer-icon"
+                  src="img/linkedin-brands.svg"
+                  alt=""
+                  srcset=""
+                />
+                <img
+                  class="footer-icon"
+                  src="img/envelope-solid.svg"
+                  alt=""
+                  srcset=""
+                />
+                <img
+                  class="footer-icon"
+                  src="img/github-square-brands.svg"
+                  alt=""
+                  srcset=""
+                />
+
+                <img
+                  class="footer-icon"
+                  src="img/phone-square-alt-solid.svg"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <p class="copyright">Copyright Elena Ivankina 2021</p>
+      </div>
     </footer>
     <script src="main.js"></script>
   </body>
