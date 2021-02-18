@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #ffffff;
+}
+
+header,
+section,
+footer {
+  padding: 2rem;
+}
+
+.bg {
+  background-color: red;
+}
+
+.bg a {
+  color: black;
+}
+
+header {
+  background-color: rgb(7, 73, 73);
+  display: flex;
+  justify-content: space-between;
+  /* When using the position, it is important to say at least top also */
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+#mobileButton {
+  display: none;
+}
+
+nav a {
+  color: #ffffff;
+}
+nav ul {
+  list-style-type: none;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+#logo {
+  color: white;
+}
+
+section {
+  min-height: 50vh;
+  scroll-margin-top: 4rem;
+}
+
+section:first-child {
+  margin-top: 82px;
+}
+
+section:nth-child(odd) {
+  background-color: rgb(245, 224, 185);
+}
+
+section:nth-child(even) {
+  background-color: teal;
+}
+
+footer {
+  background-color: rgb(7, 73, 73);
+  min-height: 25vh;
+}
+
+#topButton {
+  display: none;
+  background-color: pink;
+  padding: 1rem;
+  border: none;
+  border-radius: 5px;
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+}
+
+.material-icons {
+  font-size: 1rem;
+}
+
+/* Does not work ithout viewport in html */
+@media (max-width: 576px) {
+  #mobileButton {
+    display: block;
+    color: white;
+    background-color: transparent;
+    border: none;
+    text-decoration: none;
+  }
+
+  #mobileButton:active {
+    border: none;
+    text-decoration: none;
+  }
+
+  #mobileButton:visited {
+    border: none;
+    text-decoration: none;
+    background-color: red;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  nav.responsive ul {
+    display: block;
+    background-color: red;
+    position: absolute;
+    width: 100%;
+    top: 82px;
+    left: 0;
+  }
+
+  nav ul li {
+    display: block;
+  }
+  nav ul li a {
+    display: block;
+    padding: 1rem 2rem;
+  }
+}
