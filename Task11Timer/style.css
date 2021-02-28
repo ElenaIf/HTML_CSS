@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 1rem;
+}
+
+body {
+  background-image: url("https://source.unsplash.com/WLUHO9A_xik/1600x900");
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.timer-container {
+  background-color: rgba(94, 98, 100, 0.651);
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+h1 {
+  margin: 1rem;
+}
+
+p,
+input,
+label,
+button {
+  margin: 1rem;
+}
+
+button {
+  padding: 1rem;
+  border-radius: 5px;
+  border: none;
+  background-color: rgba(34, 149, 202, 0.74);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+  color: white;
+}
+
+.results {
+  border: 1px solid white;
+}
+
+input,
+label {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 5px;
+}
+
+input {
+  padding: 0.3rem;
+}

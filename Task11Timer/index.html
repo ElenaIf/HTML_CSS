@@ -4,25 +4,39 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Timer</title>
   </head>
   <body>
-    <h1>Timer</h1>
-    <form>
-      <div>
-        <label for="userDate">Please choose the date</label>
-        <input type="datetime-local" name="userDate" id="userDate" />
+    <div class="container">
+      <div class="timer-container">
+        <h1>Timer</h1>
+        <form>
+          <div>
+            <label for="startDate">Choose the starting date (optional)</label>
+            <input type="datetime-local" name="startDate" id="startDate" />
+          </div>
+          <div>
+            <label for="userDate">Please choose the date of the event</label>
+            <input type="datetime-local" name="userDate" id="userDate" />
+          </div>
+          <div>
+            <label for="dateName">What is the name of the event?</label>
+            <input type="text" name="dateName" id="dateName" />
+          </div>
+        </form>
+        <button>Check how much time left!</button>
+        <div class="results">
+          <p id="timer">Hello! Here you will see how many days left in total to the event!</p>
+          <p id="noWeekendsTimer">
+            Here you will see how many days left until the event, skipping Saturdays and Sundays!
+          </p>
+          <p id="timerWithStartDate">
+            If you have chosen the starting date, here will be the number of days between the dates
+          </p>
+        </div>
       </div>
-      <div>
-        <label for="dateName">What is the name of the event?</label>
-        <input type="text" name="dateName" id="dateName" />
-      </div>
-    </form>
-    <button>Check how much time left!</button>
-    <p id="timer">Hello! Here you will see how many days left in total to the event!</p>
-    <p id="noWeekendsTimer">
-      Here you will see how many days left until the event, skipping Saturdays and Sundays!
-    </p>
+    </div>
     <script src="main.js"></script>
   </body>
 </html>
