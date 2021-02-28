@@ -63,7 +63,7 @@ nav a:hover {
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover; /* Resize the background image to cover the entire container */
   background-repeat: no-repeat;
-  height: 75vh;
+  min-height: 75vh;
   /* To make the content it centered */
   display: flex;
   align-items: center;
@@ -86,12 +86,25 @@ nav a:hover {
   font-weight: 300;
 }
 
+#mobileButton {
+  display: none;
+}
+
+.material-icons {
+  font-size: 1rem;
+}
+
 .content {
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+section,
+footer {
+  scroll-margin-top: 98px;
 }
 
 .colored-section:nth-child(even) {
@@ -260,8 +273,10 @@ textarea {
 }
 
 .send-button {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
   padding: 0.8rem 2rem;
-  width: 30%;
+  min-width: 33%;
   color: #39638a;
   background-color: #a7bfd6;
   border: none;
@@ -280,8 +295,94 @@ textarea {
   margin: 1rem;
 }
 
+#topButton {
+  display: none;
+  background-color: rgba(255, 255, 255, 0.856);
+  padding: 0.3rem;
+  border: none;
+  border-radius: 100%;
+  position: fixed;
+  bottom: 2rem;
+  right: 1rem;
+  cursor: pointer;
+}
+
+.arrow {
+  color: #878a65;
+  font-size: 2rem;
+}
+
 .copyright {
   width: 100%;
   text-align: center;
   margin: 20px;
+}
+
+/* Does not work ithout viewport in html */
+@media (max-width: 576px) {
+  #mobileButton {
+    display: block;
+    color: #878a65;
+    background-color: transparent;
+    border: solid 1px #878a65;
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 0.2rem 0.3rem;
+    line-height: 0.2rem;
+  }
+
+  #mobileButton:active {
+    border: none;
+    text-decoration: none;
+  }
+
+  #mobileButton:visited {
+    border: none;
+    text-decoration: none;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  header {
+    background-color: rgba(255, 255, 255, 0.856);
+    padding: 0.3rem;
+  }
+
+  nav.responsive ul {
+    display: block;
+    background-color: rgba(255, 255, 255, 0.856);
+    position: absolute;
+    width: 100%;
+    min-height: 336px;
+    top: 90px;
+    left: 0;
+  }
+
+  nav ul li {
+    display: block;
+  }
+  nav ul li a {
+    display: block;
+    padding: 1rem 2rem;
+  }
+
+  #bannerTextBig {
+    font-size: 4rem;
+    font-weight: 700;
+  }
+
+  #bannerTextSmall {
+    font-size: 3rem;
+    font-weight: 300;
+  }
+  .contacts-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .copyright {
+    text-align: left;
+  }
 }
