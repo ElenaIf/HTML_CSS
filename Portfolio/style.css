@@ -305,6 +305,7 @@ textarea {
   border-radius: 6px;
   margin-top: 1rem;
   margin-bottom: 1rem;
+  cursor: pointer;
 }
 
 .footer-icons-container {
