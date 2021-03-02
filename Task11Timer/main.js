@@ -47,8 +47,8 @@ function countingDown() {
     let currentDateParsed = Date.parse(currentDate);
     let startDateParsed = Date.parse(startDate);
 
-    let workDays = [];
     let weekendDays = [];
+    let workDays = [];
 
     for (let i = currentDateParsed; i < userDateParsed; i = i + 24 * 60 * 60 * 1000) {
       let CheckingWeekDay = new Date(i).getDay();
