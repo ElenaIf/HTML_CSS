@@ -1,3 +1,14 @@
+:root {
+  --light-blue-color: #a7bfd6;
+  --dark-blue-color: #39638a;
+  --light-pink-color: #f5eceb;
+  --light-green-color: #d1d692;
+  --dark-green-color: #878a65;
+  --transparent-white-color-original: rgba(255, 255, 255, 0.5);
+  --transparent-white-color-transition: rgba(255, 255, 255, 0.9);
+  --transparent-white-color-mobile: rgba(255, 255, 255, 0.856);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -24,12 +35,12 @@ header {
   z-index: 1;
   width: 100%;
   transition: all 1s;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: var(--transparent-white-color-original);
   padding: 1rem;
 }
 
 .newHeader {
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: var(--transparent-white-color-transition);
   padding: 0.3rem;
 }
 
@@ -45,19 +56,20 @@ nav li {
 }
 
 nav a {
-  color: #878a65;
+  color: var(--dark-green-color);
   text-decoration: none;
   font-family: "Amatic SC";
   font-size: 1.5rem;
+  transition: all 0.5s;
 }
 
 nav a:hover {
-  color: #d1d692;
   text-decoration: underline;
+  font-size: 2rem;
 }
 
 #heroBanner {
-  background-image: linear-gradient(to bottom, #f5eceb, #a7bfd6);
+  background-image: linear-gradient(to bottom, var(--light-pink-color), var(--light-blue-color));
   background-image: url(img/11Artboard.svg);
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
@@ -76,13 +88,14 @@ nav a:hover {
 
 #bannerTextBig {
   font-size: 5rem;
-  color: #39638a;
+  color: var(--dark-blue-color);
   font-weight: 700;
+  text-shadow: 2px 2px 2px var(--light-pink-color);
 }
 
 #bannerTextSmall {
   font-size: 4rem;
-  color: #39638a;
+  color: var(--dark-blue-color);
   font-weight: 300;
 }
 
@@ -109,7 +122,7 @@ footer {
 
 .colored-section:nth-child(even) {
   width: 100%;
-  background-color: #a7bfd6;
+  background-color: var(--light-blue-color);
   padding: 1rem;
   display: flex;
   justify-content: center;
@@ -117,7 +130,7 @@ footer {
 
 .colored-section:nth-child(odd) {
   width: 100%;
-  background-color: #f5eceb;
+  background-color: var(--light-pink-color);
   padding: 1rem;
   display: flex;
   justify-content: center;
@@ -139,7 +152,7 @@ footer {
 }
 
 .card {
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: var(--transparent-white-color-original);
   padding: 1.5rem;
   flex: 1;
   text-align: center;
@@ -157,14 +170,14 @@ footer {
 
 .card-icon {
   font-size: 4rem;
-  color: #39638a;
+  color: var(--dark-blue-color);
 }
 
 .meter {
   box-sizing: content-box;
   height: 1rem;
   position: relative;
-  background: #f5eceb;
+  background: var(--light-pink-color);
   border-radius: 25px;
 }
 
@@ -172,7 +185,7 @@ footer {
   display: block;
   height: 100%;
   border-radius: 25px;
-  background-color: #39638a;
+  background-color: var(--dark-blue-color);
 }
 
 .text-picture {
@@ -183,7 +196,7 @@ footer {
 h1,
 h2 {
   font-family: "Amatic SC";
-  color: #878a65;
+  color: var(--dark-green-color);
   margin: 1rem;
 }
 
@@ -207,18 +220,17 @@ p {
 }
 
 a {
-  color: #878a65;
+  color: var(--dark-green-color);
   font-size: 0.9rem;
 }
 
 a:hover {
-  color: #d1d692;
   text-decoration: underline;
 }
 
 footer {
   width: 100%;
-  background-color: #39638a;
+  background-color: var(--dark-blue-color);
   display: flex;
   justify-content: center;
   justify-items: center;
@@ -269,7 +281,7 @@ footer h1,
 footer h2,
 footer h3,
 footer label {
-  color: #f5eceb;
+  color: var(--light-pink-color);
   font-weight: 300;
 }
 
@@ -285,11 +297,11 @@ textarea {
   padding: 5px 5px;
   font-size: 1rem;
   line-height: 1.5rem;
-  border: 1px solid #f5eceb;
+  border: 1px solid var(--light-pink-color);
   border-radius: 5px;
-  background-color: #f5eceb;
+  background-color: var(--light-pink-color);
   width: 100%;
-  color: #39638a;
+  color: var(--dark-blue-color);
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
@@ -299,8 +311,8 @@ textarea {
   font-size: 1rem;
   padding: 0.8rem 2rem;
   min-width: 33%;
-  color: #39638a;
-  background-color: #a7bfd6;
+  color: var(--dark-blue-color);
+  background-color: var(--light-blue-color);
   border: none;
   border-radius: 6px;
   margin-top: 1rem;
@@ -320,7 +332,7 @@ textarea {
 
 #topButton {
   display: none;
-  background-color: rgba(255, 255, 255, 0.856);
+  background-color: var(--transparent-white-color-transition);
   padding: 0.3rem;
   border: none;
   border-radius: 100%;
@@ -331,7 +343,7 @@ textarea {
 }
 
 .arrow {
-  color: #878a65;
+  color: var(--dark-green-color);
   font-size: 2rem;
 }
 
@@ -341,13 +353,68 @@ textarea {
   margin: 20px;
 }
 
+/********** Galery **********/
+
+.gallery {
+  background-image: linear-gradient(to bottom, var(--light-pink-color), var(--light-blue-color));
+}
+
+#gallery {
+  margin-top: 150px;
+}
+
+.gallery-grid {
+  display: grid;
+  width: 70vw;
+  max-width: 1400px;
+  justify-content: center;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
+    "a  b  e "
+    "a  b  f "
+    "d  c  g "
+    "d  c  h ";
+  grid-gap: 0.5rem;
+}
+
+#grid-item-1 {
+  grid-area: a;
+}
+#grid-item-2 {
+  grid-area: b;
+}
+#grid-item-3 {
+  grid-area: c;
+}
+#grid-item-4 {
+  grid-area: d;
+}
+#grid-item-5 {
+  grid-area: e;
+}
+#grid-item-6 {
+  grid-area: f;
+}
+#grid-item-7 {
+  grid-area: g;
+}
+#grid-item-8 {
+  grid-area: h;
+}
+
+.grid-div {
+  height: 100% !important;
+  width: 100% !important;
+  object-fit: cover !important;
+}
+
 /* Does not work ithout viewport in html */
 @media (max-width: 576px) {
   #mobileButton {
     display: block;
-    color: #878a65;
+    color: var(--dark-green-color);
     background-color: transparent;
-    border: solid 1px #878a65;
+    border: solid 1px var(--dark-green-color);
     border-radius: 5px;
     text-decoration: none;
     padding: 0.2rem 0.3rem;
@@ -369,13 +436,13 @@ textarea {
   }
 
   header {
-    background-color: rgba(255, 255, 255, 0.856);
+    background-color: var(--transparent-white-color-transition);
     padding: 0.3rem;
   }
 
   nav.responsive ul {
     display: block;
-    background-color: rgba(255, 255, 255, 0.856);
+    background-color: var(--transparent-white-color-transition);
     position: absolute;
     width: 100%;
     min-height: 336px;

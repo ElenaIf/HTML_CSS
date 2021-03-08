@@ -13,7 +13,7 @@
       content="HTML, HTML5, CSS, SCC3, JavaScript, Web Design, Web Development, Web"
     />
     <link rel="stylesheet" href="style.css" />
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Open+Sans:wght@300;400;700&display=swap"
@@ -27,8 +27,9 @@
 
   <body>
     <header>
-      <img class="logo" src="img/Logo_transparent.svg" alt="Logo by Elena Ivankina" />
-
+      <a href="index.html">
+        <img class="logo" src="img/Logo_transparent.svg" alt="Logo by Elena Ivankina" />
+      </a>
       <nav>
         <button id="mobileButton"><span class="material-icons"> menu </span></button>
         <ul>
@@ -37,6 +38,7 @@
           <li><a href="#work">WORK</a></li>
           <li><a href="#experience">EXPERIENCE</a></li>
           <li><a href="#contact">CONTACT ME</a></li>
+          <li><a href="gallery.html">GALLERY</a></li>
         </ul>
       </nav>
     </header>
@@ -64,52 +66,49 @@
         </div>
         <div class="colored-section">
           <section id="skills" class="content-container">
-           
             <h2>Skills</h2>
-            <p>
-              <div class="cards">
-                <article class="card">
-                  <i class="fab fa-css3 card-icon"></i>
-                  <h3>CSS 3</h3>
-                  <div class="meter">
-                    <span style="width: 70%"></span>
-                  </div>
-                </article>
-  
-                <article class="card">
-                  <i class="fab fa-html5 card-icon"></i>
-                  <h3>HTML 5</h3>
-                  <div class="meter">
-                    <span style="width: 90%"></span>
-                  </div>
-                </article>
-  
-                <article class="card">
-                  <i class="fab fa-js-square card-icon"></i>
-                  <h3>JavaScript</h3>
-                  <div class="meter">
-                    <span style="width: 50%"></span>
-                  </div>
-                </article>
 
-                <article class="card">
-                 <i class="fas fa-pencil-ruler card-icon"></i>
-                  <h3>UX/UI design</h3>
-                  <div class="meter">
-                    <span style="width: 70%"></span>
-                  </div>
-                </article>
+            <div class="cards">
+              <article class="card">
+                <i class="fab fa-css3 card-icon"></i>
+                <h3>CSS 3</h3>
+                <div class="meter">
+                  <span style="width: 70%"></span>
+                </div>
+              </article>
 
-                <article class="card">
-                  <i class="fas fa-users-cog card-icon"></i>
-                   <h3>SCRUM (Agile)</h3>
-                   <div class="meter">
-                     <span style="width: 90%"></span>
-                   </div>
-                 </article>
+              <article class="card">
+                <i class="fab fa-html5 card-icon"></i>
+                <h3>HTML 5</h3>
+                <div class="meter">
+                  <span style="width: 90%"></span>
+                </div>
+              </article>
 
-              </div>
-            </p>
+              <article class="card">
+                <i class="fab fa-js-square card-icon"></i>
+                <h3>JavaScript</h3>
+                <div class="meter">
+                  <span style="width: 50%"></span>
+                </div>
+              </article>
+
+              <article class="card">
+                <i class="fas fa-pencil-ruler card-icon"></i>
+                <h3>UX/UI design</h3>
+                <div class="meter">
+                  <span style="width: 70%"></span>
+                </div>
+              </article>
+
+              <article class="card">
+                <i class="fas fa-users-cog card-icon"></i>
+                <h3>SCRUM (Agile)</h3>
+                <div class="meter">
+                  <span style="width: 90%"></span>
+                </div>
+              </article>
+            </div>
           </section>
         </div>
         <div class="colored-section">
@@ -128,7 +127,6 @@
         </div>
         <div class="colored-section">
           <section id="experience" class="content-container">
-           
             <h2>Experience</h2>
             <p>
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta deserunt sapiente,
@@ -140,7 +138,6 @@
             </p>
           </section>
         </div>
-     
       </section>
     </main>
 
@@ -165,7 +162,7 @@
               </div>
               <div>
                 <label for="message">Your message *</label>
-                <textarea name="" id="message" cols="30" rows="10"></textarea>
+                <textarea id="message" cols="30" rows="10"></textarea>
               </div>
               <button id="sendButton" class="send-button">Send</button>
             </form>
@@ -173,14 +170,13 @@
 
           <div class="right-footer">
             <div class="social-media-container">
-              <h1>Other</h1>
+              <h2>Other</h2>
               <h3>social media options</h3>
               <div class="footer-icons-container">
-                <img class="footer-icon" src="img/linkedin-brands.svg" alt="" srcset="" />
-                <img class="footer-icon" src="img/envelope-solid.svg" alt="" srcset="" />
-                <img class="footer-icon" src="img/github-square-brands.svg" alt="" srcset="" />
-
-                <img class="footer-icon" src="img/phone-square-alt-solid.svg" alt="" srcset="" />
+                <img class="footer-icon" src="img/linkedin-brands.svg" alt="LinkedIn icon" />
+                <img class="footer-icon" src="img/envelope-solid.svg" alt="Email icon" />
+                <img class="footer-icon" src="img/github-square-brands.svg" alt="GitHub icon" />
+                <img class="footer-icon" src="img/phone-square-alt-solid.svg" alt="Phone icon" />
               </div>
             </div>
           </div>
@@ -188,7 +184,7 @@
         <button id="topButton">
           <span class="material-icons arrow"> keyboard_arrow_up </span>
         </button>
-        <p class="copyright"> © Elena Ivankina 2021</p>
+        <p class="copyright">© Elena Ivankina 2021</p>
       </div>
     </footer>
     <script src="main.js"></script>
