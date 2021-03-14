@@ -1,0 +1,123 @@
+#circle1 {
+  background-image: url(./img/circles/circle1.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100px;
+  height: 100px;
+  z-index: 3;
+  top: 10%;
+  right: 20%;
+  position: absolute;
+  animation-name: circle-1;
+  animation-duration: 7s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-out;
+  transition: all 1s;
+}
+
+@keyframes circle-1 {
+  0% {
+    top: 700px;
+    right: 20%;
+  }
+
+  50% {
+    transform: rotate(90deg);
+  }
+
+  100% {
+    top: 10%;
+    right: 20%;
+  }
+}
+
+#circle2 {
+  background-image: url(./img/circles/circle2-opacity90.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 400px;
+  height: 400px;
+  z-index: 2;
+  top: 70%;
+  right: 50%;
+  position: absolute;
+  animation-name: circle-2;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  transition: all 1s;
+}
+
+@keyframes circle-2 {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+#circle3 {
+  background-image: url(./img/circles/circle2-opacity60.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 600px;
+  height: 600px;
+  z-index: 2;
+  top: -20%;
+  left: -10%;
+  position: absolute;
+  animation-name: circle-3;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  transition: all 1s;
+}
+
+@keyframes circle-3 {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+#circle4 {
+  background-image: url(./img/circles/circle2-opacity60.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 350px;
+  height: 350px;
+  z-index: 2;
+  top: 10%;
+  right: 10%;
+  position: absolute;
+  animation-name: circle-4;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  transition: all 1s;
+}
+
+@keyframes circle-4 {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+@media (max-width: 576px) {
+  #circle3 {
+    display: none;
+  }
+
+  #circle4 {
+    display: none;
+  }
+}
