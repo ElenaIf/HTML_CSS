@@ -27,6 +27,8 @@ textarea {
   font-family: "Open Sans", sans-serif;
 }
 
+/* HEADER */
+
 header {
   position: fixed;
   display: flex;
@@ -49,6 +51,8 @@ header {
   margin: 0.5rem;
 }
 
+/* NAVIGATION */
+
 nav li {
   display: inline;
   margin-left: 1rem;
@@ -67,6 +71,8 @@ nav a:hover {
   text-decoration: underline;
   font-size: 2rem;
 }
+
+/* HERO BANNER */
 
 #heroBanner {
   background-image: linear-gradient(to bottom, var(--light-pink-color), var(--light-blue-color));
@@ -107,6 +113,8 @@ nav a:hover {
   align-self: flex-end;
 }
 
+/* BURGER MENU */
+
 #mobileButton {
   display: none;
 }
@@ -114,6 +122,8 @@ nav a:hover {
 .material-icons {
   font-size: 1rem;
 }
+
+/* MAIN CONTENT */
 
 .content {
   width: 100%;
@@ -152,6 +162,8 @@ footer {
   flex-direction: column;
   justify-content: flex-start;
 }
+
+/* SKILLS CARDS */
 
 .cards {
   width: 100%;
@@ -198,10 +210,50 @@ footer {
   background-color: var(--dark-blue-color);
 }
 
-.text-picture {
-  width: 13rem;
-  margin: 1rem;
+/* WORK CARDS */
+
+.work-cards {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-start;
 }
+
+.work-card {
+  background-color: var(--transparent-white-color-original);
+  padding: 0.5rem;
+  flex: 1;
+  text-align: center;
+  border-radius: 10px;
+  margin: 1rem;
+  min-width: 8rem;
+  max-width: 30rem;
+  box-shadow: 1px 1px 2px var(--dark-green-color);
+}
+
+.work-card-picture {
+  width: 65%;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.work-card ul {
+  list-style: none;
+  text-align: left;
+  font-size: 0.7rem;
+}
+
+.work-card ul li::before {
+  content: "\2022"; /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: var(--light-green-color);
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space */
+  margin-left: -1em; /* Also needed for space*/
+}
+
+/* FONTS */
 
 h1,
 h2 {
@@ -221,7 +273,8 @@ h3 {
   margin: 1rem;
 }
 
-p {
+p,
+li {
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
   line-height: 1.8rem;
@@ -231,12 +284,14 @@ p {
 
 a {
   color: var(--dark-green-color);
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 
 a:hover {
   text-decoration: underline;
 }
+
+/* FOOTER */
 
 footer {
   width: 100%;
@@ -419,7 +474,7 @@ textarea {
   object-fit: cover !important;
 }
 
-/* Does not work ithout viewport in html */
+/* Does not work without viewport in html */
 @media (max-width: 576px) {
   #mobileButton {
     display: block;
