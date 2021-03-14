@@ -103,6 +103,7 @@ nav a:hover {
   font-size: 2rem;
   color: var(--dark-blue-color);
   font-weight: 300;
+  text-shadow: 2px 2px 2px var(--light-pink-color);
   align-self: flex-end;
 }
 
@@ -349,6 +350,7 @@ textarea {
   bottom: 2rem;
   right: 1rem;
   cursor: pointer;
+  z-index: 6;
 }
 
 .arrow {

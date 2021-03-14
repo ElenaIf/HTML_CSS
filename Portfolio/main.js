@@ -5,7 +5,7 @@ let navigation = document.querySelector("nav");
 let links = document.querySelectorAll("nav ul li a");
 let i = 0;
 let textSmall = "A Web Developer";
-let speed = 80;
+let speed = 100;
 
 (function smallTextTyping() {
   if (i < textSmall.length) {
