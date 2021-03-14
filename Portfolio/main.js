@@ -3,6 +3,17 @@ let buttonTop = document.querySelector("#topButton");
 let buttonMobile = document.querySelector("#mobileButton");
 let navigation = document.querySelector("nav");
 let links = document.querySelectorAll("nav ul li a");
+let i = 0;
+let textSmall = "A Web Developer";
+let speed = 80;
+
+(function smallTextTyping() {
+  if (i < textSmall.length) {
+    document.getElementById("bannerTextSmall").innerHTML += textSmall.charAt(i);
+    i++;
+    setTimeout(smallTextTyping, speed);
+  }
+})();
 
 const changeHeader = () => {
   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
@@ -30,16 +41,3 @@ const topFunction = () => {
 window.addEventListener("scroll", changeHeader);
 buttonMobile.addEventListener("click", mobMenu);
 buttonTop.addEventListener("click", topFunction);
-
-/* window.onscroll = function () {
-  myFunction();
-};
-
-function myFunction() {
-  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-    document.getElementById("header").className = "newHeader";
-  } else {
-    document.getElementById("header").className = "";
-  }
-}
-*/

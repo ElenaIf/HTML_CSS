@@ -1,0 +1,207 @@
+:root {
+  --rainbow: linear-gradient(to bottom, #a6abe5, #abd9f6, #c0ebc4, #f8f9ca, #fed0d1, #e5b5df);
+  --original-color: #e23349;
+  --changed-color: #4e3686;
+  --color-of-font: rgb(30, 20, 73);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: var(--rainbow);
+  height: 100vh;
+  height: 100%;
+  width: 100%;
+  background-size: 1500% 1500%;
+  animation-name: rainbow_background;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  color: var(--color-of-font);
+  padding: 2rem;
+}
+
+h1,
+h2,
+h3,
+p,
+.animated-circle,
+.first-task,
+.second-task,
+.third-task,
+.fourth-task,
+.fifth-task {
+  margin: 2rem 1rem;
+}
+
+@keyframes rainbow_background {
+  0% {
+    background-position: 0% 90%;
+  }
+  50% {
+    background-position: 100% 19%;
+  }
+  100% {
+    background-position: 0% 90%;
+  }
+}
+
+.first-task {
+  height: 200px;
+  width: 200px;
+  background-color: var(--original-color);
+  border-radius: 50%;
+  transition: all 1s;
+}
+
+.first-task:hover {
+  height: 300px;
+  width: 300px;
+  background-color: var(--changed-color);
+}
+
+.second-task {
+  height: 200px;
+  width: 200px;
+  background-color: var(--original-color);
+  border-radius: 10px;
+  transition: all 1s;
+}
+
+.second-task:hover {
+  transform: rotate(180deg);
+  background-color: var(--changed-color);
+}
+
+.third-task {
+  height: 200px;
+  width: 200px;
+  background-color: var(--original-color);
+  border-radius: 10px;
+  transition: all 1s;
+  display: flex;
+  align-items: center;
+}
+
+.third-task p {
+  margin: 0 auto;
+  font-weight: bold;
+  display: none;
+}
+
+.third-task:hover {
+  height: 150px;
+  width: 150px;
+}
+
+.third-task:hover p {
+  display: block;
+}
+
+.fourth-task h3 {
+  display: inline-block;
+  position: relative;
+  padding: 10px;
+  text-align: left;
+  font-size: 2rem;
+  background-image: var(--rainbow);
+}
+
+.fourth-task h3::after {
+  content: "";
+  height: 6px;
+  width: 0;
+  display: block;
+  background: var(--original-color);
+  border-radius: 3px;
+  transition: 1s ease-in all;
+}
+
+.fourth-task:hover h3::after {
+  width: 100%;
+}
+
+/* ------------ task 5  ----------------*/
+
+.fifth-task {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  width: 200px;
+  position: relative;
+  background: var(--original-color);
+}
+
+/* TOP side */
+.fifth-task::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0;
+  bottom: 0;
+  right: 200px;
+  border-top: 5px solid var(--changed-color);
+  transition: all 1s;
+}
+
+.fifth-task:hover::before {
+  right: 0;
+}
+/* Right side */
+
+.fifth-task::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 200px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-right: 5px solid var(--changed-color);
+  transition: all 1s;
+}
+
+.fifth-task:hover::after {
+  top: 0;
+}
+
+/* Bottom side */
+
+.fifth-task h3::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 200px;
+  right: 0;
+  border-bottom: 5px solid var(--changed-color);
+  transition: all 1s;
+}
+
+.fifth-task:hover h3::before {
+  left: 0;
+}
+
+/* Left side */
+
+.fifth-task h3::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 200px;
+  left: 0;
+  right: 0;
+  border-left: 5px solid var(--changed-color);
+  transition: all 1s;
+}
+
+.fifth-task:hover h3::after {
+  bottom: 0;
+}

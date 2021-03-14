@@ -1,0 +1,162 @@
+:root {
+  --myColor: linear-gradient(to top, rgb(167, 167, 216), rgb(236, 189, 197));
+}
+
+/* html {
+  background-image: radial-gradient(
+    ellipse at bottom,
+    violet 10%,
+    blue,
+    lightblue,
+    green,
+    yellow,
+    orange,
+    red
+  );
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+ */
+
+html {
+  background-image: linear-gradient(to top, rgb(167, 167, 216), rgb(236, 189, 197));
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+.card {
+  margin: 1rem auto;
+  height: 300px;
+  width: 200px;
+  background-image: radial-gradient(rgb(130, 130, 202), rgb(34, 34, 85));
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 1s;
+}
+
+.card1 {
+  box-shadow: 2px 3px 7px rgb(244, 248, 2);
+  background-image: radial-gradient(rgb(109, 187, 218), rgb(17, 78, 114));
+}
+
+.card1:hover {
+  transform: rotate(360deg);
+}
+
+.card2 {
+  background-image: radial-gradient(yellow, rgb(214, 110, 24));
+}
+
+.card2:hover {
+  box-shadow: inset 0 0 300px #333;
+  transform: translateX(100px);
+}
+
+.card3 {
+  background-image: radial-gradient(rgb(65, 190, 113), rgb(13, 94, 31));
+}
+
+.card3:hover {
+  /* transform: rotate(360deg); */
+  /* transform: rotate3d(1, 1, 1, 45deg); */
+  /* transform: skew(15deg); */
+  transform: scale(2) rotate(45deg);
+}
+
+.circle {
+  background-image: var(--myColor);
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+  margin: 1rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation-name: example;
+  animation-duration: 3s;
+  animation-iteration-count: 3;
+}
+
+@keyframes example {
+  0% {
+    background: blue;
+    margin-top: 0;
+    margin-left: 20px;
+  }
+  10% {
+    background: yellow;
+    margin-top: 0;
+    margin-left: 200px;
+  }
+  50% {
+    background: violet;
+    margin-top: 200px;
+    margin-left: 200px;
+  }
+  90% {
+    background: red;
+    margin-top: 200px;
+    margin-left: 0;
+  }
+  100% {
+    background: blue;
+    margin-top: 0;
+    margin-left: 0;
+  }
+}
+
+.text-holder {
+  background-image: var(--myColor);
+
+  height: 200px;
+  width: 200px;
+  margin: 1rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+h1 {
+  display: inline-block;
+  position: relative;
+  padding: 10px;
+  text-align: left;
+}
+
+.simple h1::after {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 0;
+  background-color: green;
+  transition: 1s ease-in all;
+}
+
+.simple:hover h1::after {
+  width: 100%;
+}
+
+.moving {
+  height: 5px;
+  background-color: red;
+  animation-name: example2;
+  animation-duration: 3s;
+  animation-iteration-count: 3;
+}
+
+@keyframes example2 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
