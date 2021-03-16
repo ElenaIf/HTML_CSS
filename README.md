@@ -10,88 +10,88 @@ All tasks are made with HTML5, CSS3 and JavaScript.
 
 The website where can be found information about myself. Almost all my knowledge about HTML and CSS are applied here.
 
-[LINK]()
+[LINK](https://elenaif.github.io/HTML_CSS/Portfolio/index.html)
 
 ### Task1TagsTesting
 
 My first tryouts with HTML tags
 
-[LINK]()
+[LINK](https://elenaif.github.io/HTML_CSS/Task1TagsTesting/index.html)
 
 ### Task2Lists
 
 HTML lists and styling them
 
-[LINK]()
+[LINK](https://elenaif.github.io/HTML_CSS/Task2Lists/index.html)
 
 ### Task3DivsAndTable
 
 Styling divs and tables
 
-[LINK]()
+[LINK](https://elenaif.github.io/HTML_CSS/Task3DivsAndTable/index.html)
 
 ### Task4Inputs
 
 Studying different types of inputs
 
-[LINK]()
+[LINK](https://elenaif.github.io/HTML_CSS/Task4Inputs/index.html)
 
 ### Task5Form
 
 Styling a form
 
-[LINK]()
+[LINK](https://elenaif.github.io/HTML_CSS/Task5Form/index.html)
 
 ### Task6ResponsiveDesign
 
 Learning how to make a mobile version
 
-[LINK]()
+[LINK](https://elenaif.github.io/HTML_CSS/Task6ResponsiveDesign/index.html)
 
 ### Task7FlexBox
 
 Learning to use flexbox
 
-[LINK]()
+[LINK](https://elenaif.github.io/HTML_CSS/Task7FlexBox/index.html)
 
 ### Task8FlexChallenge
 
 Flexbox challenge
 
-[LINK]()
+[LINK](https://elenaif.github.io/HTML_CSS/Task8FlexChallenge/index.html)
 
 ### Task9Positioning
 
 Learning about position
 
-[LINK]()
+[LINK](https://elenaif.github.io/HTML_CSS/Task9Positioning/index.html)
 
 ### Task9PreudoClasses
 
 Lerning about preudo classes and pseudo elements
 
-[LINK]()
+[LINK](https://elenaif.github.io/HTML_CSS/Task9PreudoClasses/index.html)
 
 ### Task10JSMobileMenu
 
 Learning to make a mobile menu
 
-[LINK]()
+[LINK](https://elenaif.github.io/HTML_CSS/Task10JSMobileMenu/index.html)
 
 ### Task11Timer
 
 A timer that shows how many days have left until the event. User can write the event name. Also the start date can be chosen. If it is empty, the count will start from today.
 
-[LINK]()
+[LINK](https://elenaif.github.io/HTML_CSS/Task11Timer/index.html)
 
 ### Task12GradientTransitionAnimation
 
 Lerning gradient, transitions and animations
 
-[LINK]()
+[LINK](https://elenaif.github.io/HTML_CSS/Task12GradientTransitionAnimation/index.html)
 
 ### Task13AnimationChallenge
 
 Some more advanced tasks with animation
 
-[LINK]()
+[LINK](https://elenaif.github.io/HTML_CSS/Task13AnimationChallenge/index.html)
