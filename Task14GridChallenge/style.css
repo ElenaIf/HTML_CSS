@@ -1,0 +1,81 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+.container {
+	display: grid;
+	min-height: 100vh;
+	grid-template-columns: repeat(12, 1fr);
+	grid-template-rows: auto;
+	column-gap: 1px;
+	row-gap: 1px;
+	grid-template-areas:
+		"site-title site-title site-title site-title site-title site-title                                                                                                          nav1 nav1 nav2 nav2 nav3 nav3"
+		"post-title post-title post-title post-title post-title post-title post-title post-title post-title                                                                         side-bar side-bar side-bar"
+		"post-meta post-meta     main-content main-content main-content main-content main-content main-content main-content                                                         side-bar side-bar side-bar"
+		"post-meta post-meta     main-content main-content main-content main-content main-content main-content main-content                                                         ads ads ads"
+		"post-meta post-meta     main-content-image main-content-image main-content-image main-content-image main-content-image main-content-image main-content-image               ads ads ads"
+		"post-meta post-meta     main-content-image main-content-image main-content-image main-content-image main-content-image main-content-image main-content-image               other-stuff other-stuff other-stuff"
+		"footer footer footer footer footer footer footer footer footer footer footer footer";
+}
+
+.site-title {
+	grid-area: site-title;
+	background-color: plum;
+}
+
+.nav1 {
+	grid-area: nav1;
+	background-color: pink;
+}
+
+.nav2 {
+	grid-area: nav2;
+	background-color: pink;
+}
+
+.nav3 {
+	grid-area: nav3;
+	background-color: pink;
+}
+
+.post-title {
+	grid-area: post-title;
+	background-color: royalblue;
+}
+
+.post-meta {
+	grid-area: post-meta;
+	background-color: green;
+}
+
+.main-content {
+	grid-area: main-content;
+	background-color: grey;
+}
+
+.main-content-image {
+	grid-area: main-content-image;
+	background-color: yellow;
+}
+
+.side-bar {
+	grid-area: side-bar;
+	background-color: orange;
+}
+
+.other-stuff {
+	grid-area: other-stuff;
+	background-color: palevioletred;
+}
+
+.footer {
+	grid-area: footer;
+	background-color: brown;
+}
+
+.ads {
+	grid-area: ads;
+	background-color: cadetblue;
+}
