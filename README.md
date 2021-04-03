@@ -95,3 +95,9 @@ Lerning gradient, transitions and animations
 Some more advanced tasks with animation
 
 [LINK](https://elenaif.github.io/HTML_CSS/Task13AnimationChallenge/index.html)
+
+### Task14GridChallenge
+
+A page made with grid
+
+[LINK](https://elenaif.github.io/HTML_CSS/Task14GridChallenge/index.html)
